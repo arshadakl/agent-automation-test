@@ -1,0 +1,281 @@
+# NSE NIFTY 50 Stock Universe for Angel One API
+# token: Angel One instrument token for WebSocket subscription
+# exchange: NSE
+
+stocks:
+  IT:
+    - symbol: TCS
+      token: "11536"
+      exchange: NSE
+      isin: INE467B01029
+    - symbol: INFY
+      token: "1594"
+      exchange: NSE
+      isin: INE009A01021
+    - symbol: WIPRO
+      token: "3787"
+      exchange: NSE
+      isin: INE075A01022
+    - symbol: HCLTECH
+      token: "1330"
+      exchange: NSE
+      isin: INE860A01027
+    - symbol: TECHM
+      token: "13538"
+      exchange: NSE
+      isin: INE669C01036
+
+  BANKING:
+    - symbol: HDFCBANK
+      token: "1333"
+      exchange: NSE
+      isin: INE040A01034
+    - symbol: ICICIBANK
+      token: "4963"
+      exchange: NSE
+      isin: INE090A01021
+    - symbol: KOTAKBANK
+      token: "1922"
+      exchange: NSE
+      isin: INE237A01028
+    - symbol: AXISBANK
+      token: "5900"
+      exchange: NSE
+      isin: INE238A01034
+    - symbol: SBIN
+      token: "3045"
+      exchange: NSE
+      isin: INE062A01020
+    - symbol: INDUSINDBK
+      token: "5258"
+      exchange: NSE
+      isin: INE095A01012
+    - symbol: BAJFINANCE
+      token: "317"
+      exchange: NSE
+      isin: INE296A01024
+
+  ENERGY:
+    - symbol: RELIANCE
+      token: "2885"
+      exchange: NSE
+      isin: INE002A01018
+    - symbol: ONGC
+      token: "2475"
+      exchange: NSE
+      isin: INE213A01029
+    - symbol: BPCL
+      token: "526"
+      exchange: NSE
+      isin: INE029A01011
+    - symbol: NTPC
+      token: "11630"
+      exchange: NSE
+      isin: INE733E01010
+    - symbol: POWERGRID
+      token: "14977"
+      exchange: NSE
+      isin: INE752E01010
+    - symbol: COALINDIA
+      token: "20374"
+      exchange: NSE
+      isin: INE522F01014
+
+  FMCG:
+    - symbol: HINDUNILVR
+      token: "1394"
+      exchange: NSE
+      isin: INE030A01027
+    - symbol: ITC
+      token: "1660"
+      exchange: NSE
+      isin: INE154A01025
+    - symbol: NESTLEIND
+      token: "17963"
+      exchange: NSE
+      isin: INE239A01016
+    - symbol: BRITANNIA
+      token: "547"
+      exchange: NSE
+      isin: INE216A01030
+    - symbol: MARICO
+      token: "4067"
+      exchange: NSE
+      isin: INE196A01026
+
+  AUTO:
+    - symbol: MARUTI
+      token: "10999"
+      exchange: NSE
+      isin: INE585B01010
+    - symbol: TATAMOTORS
+      token: "3456"
+      exchange: NSE
+      isin: INE155A01022
+    - symbol: BAJAJ-AUTO
+      token: "16669"
+      exchange: NSE
+      isin: INE917I01010
+    - symbol: HEROMOTOCO
+      token: "1348"
+      exchange: NSE
+      isin: INE158A01026
+    - symbol: EICHERMOT
+      token: "910"
+      exchange: NSE
+      isin: INE066A01021
+    - symbol: M&M
+      token: "2031"
+      exchange: NSE
+      isin: INE101A01026
+
+  PHARMA:
+    - symbol: SUNPHARMA
+      token: "3351"
+      exchange: NSE
+      isin: INE044A01036
+    - symbol: DRREDDY
+      token: "881"
+      exchange: NSE
+      isin: INE089A01031
+    - symbol: CIPLA
+      token: "694"
+      exchange: NSE
+      isin: INE059A01026
+    - symbol: DIVISLAB
+      token: "10940"
+      exchange: NSE
+      isin: INE361B01024
+    - symbol: APOLLOHOSP
+      token: "157"
+      exchange: NSE
+      isin: INE437A01024
+
+  METALS:
+    - symbol: TATASTEEL
+      token: "3499"
+      exchange: NSE
+      isin: INE081A01020
+    - symbol: JSWSTEEL
+      token: "11723"
+      exchange: NSE
+      isin: INE019A01038
+    - symbol: HINDALCO
+      token: "1363"
+      exchange: NSE
+      isin: INE038A01020
+    - symbol: VEDL
+      token: "3063"
+      exchange: NSE
+      isin: INE205A01025
+
+  FINANCE:
+    - symbol: BAJAJFINSV
+      token: "16675"
+      exchange: NSE
+      isin: INE918I01026
+    - symbol: HDFCLIFE
+      token: "467"
+      exchange: NSE
+      isin: INE795G01014
+    - symbol: SBILIFE
+      token: "21808"
+      exchange: NSE
+      isin: INE123W01016
+    - symbol: ICICIPRULI
+      token: "18652"
+      exchange: NSE
+      isin: INE726G01019
+
+  INFRA:
+    - symbol: LTIM
+      token: "17818"
+      exchange: NSE
+      isin: INE214T01019
+    - symbol: LT
+      token: "11483"
+      exchange: NSE
+      isin: INE018A01030
+    - symbol: ADANIPORTS
+      token: "15083"
+      exchange: NSE
+      isin: INE742F01042
+    - symbol: ULTRACEMCO
+      token: "11532"
+      exchange: NSE
+      isin: INE481G01011
+
+  CONSUMER:
+    - symbol: TITAN
+      token: "3506"
+      exchange: NSE
+      isin: INE280A01028
+    - symbol: ASIANPAINT
+      token: "236"
+      exchange: NSE
+      isin: INE021A01026
+    - symbol: BHARTIARTL
+      token: "10604"
+      exchange: NSE
+      isin: INE397D01024
+    - symbol: WIPRO
+      token: "3787"
+      exchange: NSE
+      isin: INE075A01022
+    - symbol: GRASIM
+      token: "1232"
+      exchange: NSE
+      isin: INE047A01021
+
+# Default scan universe (symbols only for quick reference)
+default_scan_universe:
+  - TCS
+  - INFY
+  - WIPRO
+  - HCLTECH
+  - TECHM
+  - HDFCBANK
+  - ICICIBANK
+  - KOTAKBANK
+  - AXISBANK
+  - SBIN
+  - INDUSINDBK
+  - BAJFINANCE
+  - RELIANCE
+  - ONGC
+  - NTPC
+  - HINDUNILVR
+  - ITC
+  - NESTLEIND
+  - MARUTI
+  - TATAMOTORS
+  - BAJAJ-AUTO
+  - HEROMOTOCO
+  - EICHERMOT
+  - SUNPHARMA
+  - DRREDDY
+  - CIPLA
+  - DIVISLAB
+  - TATASTEEL
+  - JSWSTEEL
+  - HINDALCO
+  - BAJAJFINSV
+  - LT
+  - ADANIPORTS
+  - ULTRACEMCO
+  - TITAN
+  - ASIANPAINT
+  - BHARTIARTL
+  - GRASIM
+  - APOLLOHOSP
+  - COALINDIA
+  - POWERGRID
+  - BPCL
+  - M&M
+  - VEDL
+  - LTIM
+  - SBILIFE
+  - HDFCLIFE
+  - ICICIPRULI
+  - MARICO
+  - BRITANNIA

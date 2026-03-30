@@ -1,0 +1,30 @@
+# Credentials
+config/credentials.env
+.env
+
+# Runtime data
+data/paper_trades.db
+data/historical/*
+data/logs/*
+data/reports/*
+
+# Keep directory structure
+!data/historical/.gitkeep
+!data/logs/.gitkeep
+!data/reports/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.idea/
+.vscode/
+*.swp
