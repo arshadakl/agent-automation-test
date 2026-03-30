@@ -1,0 +1,91 @@
+broker:
+  name: "angelone"
+  client_id: "${ANGEL_CLIENT_ID}"
+  password: "${ANGEL_PASSWORD}"
+  totp_secret: "${ANGEL_TOTP_SECRET}"
+  api_key: "${ANGEL_API_KEY}"
+
+trading:
+  mode: "paper"
+  paper_capital: 100000
+
+risk:
+  max_capital_usage_percent: 60
+  per_trade_risk_percent: 1.5
+  max_position_size_percent: 15
+  max_daily_loss_percent: 3.0
+  max_daily_trades: 10
+  max_open_positions: 5
+  mandatory_stop_loss: true
+  max_stop_loss_percent: 2.0
+  trailing_stop_enabled: true
+  trailing_stop_trigger_percent: 1.0
+  trailing_stop_distance_percent: 0.5
+  no_new_trades_after: "14:30"
+  force_square_off_time: "15:10"
+  no_trade_first_minutes: 3
+  cooldown_after_consecutive_losses: 3
+  cooldown_duration_minutes: 30
+
+scanner:
+  min_volume: 500000
+  min_turnover_cr: 10
+  price_range: [100, 5000]
+  min_atr_percent: 1.5
+  max_stocks: 15
+  scan_time: "08:50"
+  sectors_exclude: []
+
+strategies:
+  enabled:
+    - orb
+    - vwap_reversion
+    - momentum_breakout
+
+  orb:
+    timeframe: "15m"
+    opening_range_candles: 1
+    volume_multiplier: 1.5
+    min_body_ratio: 0.6
+    risk_reward: 2.0
+
+  vwap_reversion:
+    timeframe: "5m"
+    std_dev_bands: 1.0
+    rsi_period: 14
+    rsi_oversold: 35
+    rsi_overbought: 65
+
+  momentum_breakout:
+    timeframe: "5m"
+    consolidation_candles: 10
+    volume_surge_multiplier: 2.0
+    adx_threshold: 25
+    ema_fast: 9
+    ema_slow: 21
+
+backtest:
+  data_source: "angelone"
+  default_period_days: 180
+  slippage_percent: 0.05
+  commission_per_order: 20
+  cache_dir: "data/historical"
+
+schedule:
+  market_open: "09:15"
+  market_close: "15:30"
+  scanner_run: "08:50"
+  pre_market_check: "09:00"
+  square_off_check: "15:10"
+
+notifications:
+  enabled: false
+  telegram:
+    bot_token: "${TELEGRAM_BOT_TOKEN}"
+    chat_id: "${TELEGRAM_CHAT_ID}"
+  notify_on:
+    - trade_entry
+    - trade_exit
+    - daily_summary
+    - kill_switch_triggered
+    - error
